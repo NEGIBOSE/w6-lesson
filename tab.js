@@ -15,9 +15,15 @@
   const handleClick = (e) => {
     e.preventDefault();
 
+    //クリックされたnavとそのdataを取得
     const $this = e.target;
     const targetVal = $this.dataset.nav;
     console.log("targetVal", targetVal);
+
+    //対象のコンテンツをアクティブ化する
+    $tab.querySelectorAll(
+      '[data-content="' + targetVal + '"]'
+    )[0].style.display = "block";
   };
 
   //前nav要素に対して関数を適応・発火
