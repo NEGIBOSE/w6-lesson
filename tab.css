@@ -12,8 +12,20 @@
   text-decoration: none;
   border-radius: 5px 5px 0 0;
 }
-.tab-nav-item.is-active {
-  background: #000;
+.red.is-active {
+  background: #952727;
+  color: #fff;
+}
+.blue.is-active {
+  background: #422faf;
+  color: #fff;
+}
+.yellow.is-active {
+  background: #aab631;
+  color: #fff;
+}
+.green.is-active {
+  background: #5eac2d;
   color: #fff;
 }
 .tab-contents {
