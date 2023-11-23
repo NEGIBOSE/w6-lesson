@@ -16,5 +16,11 @@
     e.preventDefault();
     console.log("clicked!");
   };
-  $nav[0].addEventListener("click", (e) => handleClick(e));
+
+  //前nav要素に対して関数を適応・発火
+  let index = 0;
+  while (index < $nav.length) {
+    $nav[index].addEventListener("click", (e) => handleClick(e));
+    index++;
+  }
 })();
