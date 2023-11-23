@@ -1,5 +1,16 @@
 .tab {
   width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+.mini-title {
+  font-family: "Arial", sans-serif;
+  font-size: 4em;
+  background: linear-gradient(45deg, #ff8800, #1ae8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0 auto;
 }
 .tab-nav {
   display: flex;
