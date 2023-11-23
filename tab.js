@@ -24,6 +24,7 @@
     $tab.querySelectorAll(
       '[data-content="' + targetVal + '"]'
     )[0].style.display = "block";
+    $nav[targetVal].classList.add("is-active");
   };
 
   //前nav要素に対して関数を適応・発火
