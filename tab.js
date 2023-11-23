@@ -18,7 +18,13 @@
     //クリックされたnavとそのdataを取得
     const $this = e.target;
     const targetVal = $this.dataset.nav;
-    console.log("targetVal", targetVal);
+
+    //対象外のnav、contentすべて一旦リセットする
+    let index = 0;
+    while (index < $nav.length) {
+      $content[index].style.display = "none";
+      index++;
+    }
 
     //対象のコンテンツをアクティブ化する
     $tab.querySelectorAll(
