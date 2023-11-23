@@ -14,7 +14,10 @@
   //クリックしたら起こるイベント
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("clicked!");
+
+    const $this = e.target;
+    const targetVal = $this.dataset.nav;
+    console.log("targetVal", targetVal);
   };
 
   //前nav要素に対して関数を適応・発火
